@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="32dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Launch activity with different Modes"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/activity_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:padding="8dp"
+            android:text="Activity A"
+            android:textColor="#757575"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/activity_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:padding="8dp"
+            android:text="Activity B"
+            android:textColor="#757575"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/activity_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:padding="8dp"
+            android:text="Activity C"
+            android:textColor="#757575"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/activity_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:padding="8dp"
+            android:text="Activity D"
+            android:textColor="#757575"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_standard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="Standard " />
+
+    <Button
+        android:id="@+id/bt_single_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="Single Top " />
+
+    <Button
+        android:id="@+id/bt_single_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="Single Task " />
+
+
+    <Button
+        android:id="@+id/bt_single_instance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="Single Instance " />
+
+    <TextView
+        android:id="@+id/task_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task 1 => " />
+
+    <TextView
+        android:id="@+id/task_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task 1 => " />
+
+</LinearLayout>

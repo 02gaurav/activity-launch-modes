@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.activitylaunchmodes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ActivityLaunchModes">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityD"
+            android:launchMode="standard"/>
+
+        <activity android:name=".ActivityC"
+            android:launchMode="standard" />
+
+        <activity android:name=".ActivityB"
+            android:launchMode="standard"
+            android:taskAffinity="com.affinity.of.b"
+            />
+
+        <activity android:name=".ActivityA"
+            android:taskAffinity="com.affinity.of.a"
+            android:launchMode="standard"/>
+
+    </application>
+
+</manifest>
+
+   <!-- android:taskAffinity="com.affinity.of.c"
+    android:taskAffinity="com.affinity.of.a"
+    android:taskAffinity="com.affinity.of.b"
+    android:taskAffinity="com.affinity.of.a"-->
